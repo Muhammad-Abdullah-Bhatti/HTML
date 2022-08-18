@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Form</title>
+</head>
+<body>
+    <form action="https://www.example.com">
+        <fieldset><legend>Personal Details</legend><!--For Grouping and use of required for compulsary fields(Form Validation)-->
+        <p>First name:<!--Text bar for first name-->
+            <input type="text" name="first name" size="15" maxlength="30" required/>
+            <br/>
+            <br/>
+            Last name:<!--Text bar for last name-->
+            <input type="text" name="last name" size="15" maxlength="30" required/>
+        </p>
+        <p>Password:<!--Text bar for password-->
+            <input type="password" name="password"size="15"maxlength="30" required/>
+        </p>
+        <p>Re-enter Password:
+            <input type="password" name="password"size="15"maxlength="30"required/>
+        </p>
+        <input type="date" name="DOB"/><!--Use Date of birth table-->
+        <p>Enter your email:
+        <input type="email" name="email"/><!--Use for email-->
+        </p>
+        <p>Comments:</p><!--Text bar for comments-->
+        <textarea name="comments" rows="4" cols="30">Enter your comments....</textarea>
+        <p>Gender:<!--Use of radio buttons for selecting one option-->
+            <input type="radio" name="gender" value="M"/>Male
+            <input type="radio" name="gender" value="F"/>Female
+        </p></fieldset>
+        <p>Interest:<!--Use of checkbox-->
+            <input type="checkbox" name="interest" value="men"/>Men Clothing
+            <input type="checkbox" name="interest" value="women"/>Women Clothing
+            <input type="checkbox" name="interest" value="acc"/>Accessories
+            <input type="checkbox" name="interest" value="ele"/>Electronics
+        </p>
+        <p>Nationality:<!--Use of drop-down list(For selecting one option)-->
+            <select name="countries">
+                <option value="pakistan">Pakistan</option>
+                <option value="uk">UK</option>
+                <option value="usa">USA</option>
+                <option value="japan">Japan</option>
+                <option value="china">China</option>
+        </p>
+        <!--<p>Nationality:Use of drop-down list(For selecting one or more options)
+            <select name="countries" multiple>
+                <option value="pakistan">Pakistan</option>
+                <option value="uk">UK</option>
+                <option value="usa">USA</option>
+                <option value="japan">Japan</option>
+                <option value="china">China</option>
+        </p>-->
+        <p>Upload Profile Picture:<!--To upload file/image-->
+            <input type="file" name="dp"/>
+        </p>
+    <p>To submit form:<!--To submit form-->
+        <input type="submit"/>
+    </p>
+    <!--Using image as submit button-->
+    <input type="image" src="C:\Users\WahidBahtti\Downloads\submit.jpeg" width="150"/>
+    </form>
+</body>
+</html>
